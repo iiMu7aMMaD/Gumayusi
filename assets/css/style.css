@@ -36,3 +36,7 @@
 .menu ul li a:hover {
     color: #03a9f4;
 }
+
+::selection {
+    color: rgba(0, 0, 0, 0.5);
+}

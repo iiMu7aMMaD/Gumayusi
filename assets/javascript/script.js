@@ -7,14 +7,14 @@ menuToggle.addEventListener("click", () => {
 });
 
 var video = document.getElementById("video");
-var storedTime = localStorage.getItem("videoTime");
+var storedTime = sessionStorage.getItem("videoTime");
 
 if (storedTime) {
   video.currentTime = parseFloat(storedTime);
 }
 
 video.addEventListener("timeupdate", function () {
-  localStorage.setItem("videoTime", video.currentTime);
+  sessionStorage.setItem("videoTime", video.currentTime);
 });
 
 video.addEventListener(

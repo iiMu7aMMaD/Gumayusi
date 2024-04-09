@@ -7,6 +7,29 @@
   font-family: "Poppins", sans-serif;
 }
 
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .menu {
   position: absolute;
   top: 0;

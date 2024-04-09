@@ -199,3 +199,99 @@ header .logo {
 ::selection {
   color: rgba(0, 0, 0, 0.5);
 }
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 20px;
+  }
+
+  .toggle,
+  .toggle.active {
+    width: 30px;
+    height: 30px;
+    background-size: 15px;
+  }
+
+  .main {
+    padding: 50px;
+  }
+
+  .main.active {
+    right: 200px;
+  }
+
+  .text h2 {
+    font-size: 3em;
+  }
+
+  .text h3 {
+    font-size: 2.5em;
+  }
+
+  .text h4 {
+    font-size: 1.5em;
+  }
+
+  .text p {
+    font-size: 1em;
+    max-width: 100%;
+  }
+
+  .text a {
+    padding: 8px 20px;
+    font-size: 0.9em;
+    margin-top: 8px;
+  }
+
+  .menu {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    padding: 30px;
+  }
+
+  .toggle,
+  .toggle.active {
+    width: 35px;
+    height: 35px;
+    background-size: 17.5px;
+  }
+
+  .main {
+    padding: 80px;
+  }
+
+  .main.active {
+    right: 250px;
+  }
+
+  .text h2 {
+    font-size: 4em;
+  }
+
+  .text h3 {
+    font-size: 3.5em;
+  }
+
+  .text h4 {
+    font-size: 1.8em;
+  }
+
+  .text a {
+    padding: 10px 25px;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+  .menu {
+    width: 250px;
+  }
+}
+
+img {
+  width: 80%; /* Or set to a specific width if desired */
+  height: auto; /* Maintain aspect ratio */
+}

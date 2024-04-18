@@ -292,6 +292,59 @@ header .logo {
 }
 
 img {
-  width: 80%; /* Or set to a specific width if desired */
-  height: auto; /* Maintain aspect ratio */
+  width: 80%;
+  height: auto;
+}
+
+.cards {
+  opacity: 1;
+  transform: perspective(1200px);
+}
+
+.cards-info {
+  width: 100%;
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+.card {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  gap: 20px;
+}
+
+.photo-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.photo-container {
+  text-align: center;
+}
+
+.photo-1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.photo-2 {
+  max-width: 45%;
+  height: auto;
+}
+
+.text {
+  margin-top: 10px;
 }
